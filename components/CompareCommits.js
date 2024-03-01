@@ -1,5 +1,5 @@
 import { StyleSheet, View} from "react-native";
-
+import Button from './Button';
 import ImageViewer from './ImageViewer';
 
 const PlaceholderImage = require("../assets/images/background-image.png");
@@ -9,6 +9,9 @@ export default function CompareCommits() {
     <View style={styles.compareContainer}>
       <View style={styles.imageContainer}>
         <ImageViewer placeholderImageSource={PlaceholderImage} id={1} />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button  theme="small" label="" iconName="arrow-right" />
       </View>
       <View style={styles.imageContainer}>
         <ImageViewer placeholderImageSource={PlaceholderImage} id={2}/>
@@ -30,4 +33,10 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
   },
+  buttonContainer: {
+    flex: 1 / 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 0, 
+  }
 });
