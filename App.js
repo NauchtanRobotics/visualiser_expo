@@ -13,7 +13,7 @@ export default function App() {
       <View style={styles.headerContainer}>
         <Button theme="primary" label="Choose a folder" iconName="folder-open" />
       </View>
-      <View style={styles.compareContainer}>
+      <View>
         <CompareCommits placeholderImageSource={PlaceholderImage} />
       </View>
       <View style={styles.footerContainer}>
@@ -39,10 +39,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 20
-  },
-  compareContainer: {
-    //flex: 1,
-    //alignItems: 'left',
   },
   footerContainer: {
     flex: 1 / 3,
