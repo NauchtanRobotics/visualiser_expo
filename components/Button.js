@@ -22,7 +22,7 @@ export default function Button({ label, theme, iconName }) {
   }
   if (theme === "small") {
     return (
-      <View style={[styles.buttonContainer, { borderWidth: 0, borderColor: "#ffd33d", borderRadius: 18, height: 35, width: 45 }]}>
+      <View style={[styles.buttonContainer, { marginHorizontal: 3, borderWidth: 0, borderColor: "#ffd33d", borderRadius: 18, height: 35, width: 45 }]}>
         <Pressable
           style={[styles.indexButton, { backgroundColor: "#fff" } ]}
           onPress={() => alert('You pressed a button.')}
