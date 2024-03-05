@@ -15,3 +15,7 @@ Install project dependencies should be installed next:
 
 `npm install`
 
+
+# Developing
+
+`npx expo start`
